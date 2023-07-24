@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    background-color: rgb(132, 71, 132);
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.planets {
+    display: flex;
+    justify-content: space-around; 
+}
+
+#earth img {
+    height: 200px;
+    width: 175px;
+}
+#mars img {
+    height: 200px;
+    width: 175px;
+
+}
+#saturn img {
+    height: 190px;
+    width: 200px;
+
+}
+#jupiter img {
+    height: 200px; 
+    width: 150px; 
+    
+}
+#barbie img{
+    height: 200px; 
+    width: 275px; 
+}
+body{
+    background-image: url(background.jpg);
+}
