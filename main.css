@@ -1,9 +1,41 @@
 h1 {
     text-align: center;
+    font-family:'Courier New', Courier, monospace;
     background-color: rgb(132, 71, 132);
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 240px;
+    margin-right: 240px;
+    color: white;
 }
+
+#start {
+    background-color:greenyellow;
+    width:200px;
+    height:50px;
+    font-size:25px;
+
+}
+
+#instructions {
+    background-color: grey;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    
+}
+
+.buttons{
+    display: flex;
+    width: 20%;   
+    margin: auto;
+     /* justify-content: center; */
+    flex-direction: column;
+    gap: 20px;
+    /* flex-wrap: nowrap; */
+}
+
+
+
+
 
 .planets {
     display: flex;
@@ -34,5 +66,20 @@ h1 {
     width: 275px; 
 }
 body{
-    background-image: url(background.jpg);
+
+    animation: changeBackground 10s infinite;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url(background.jpg);
+    }
+    50% {
+        background-image: url(space2.jpg);
+    }
+    100% {
+        background-image:url(space3.jpg);
+    }
 }
