@@ -1,0 +1,19 @@
+body {
+    margin:0;
+}
+div {
+    border:solid black 1px
+}
+.side {
+    display: flex;
+    flex-direction:column;
+}
+#container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr
+}
+#maps {
+    height: 100px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
