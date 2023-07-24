@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Galaxy</title>
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+        }
+        div {
+            border:solid black 1px
+        }
+        .side: {
+            display: flex;
+            flex-direction:column;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 2fr
+        }
+        #maps {
+            height: 100px;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="maps">
+        <div id="earth"></div>
+        <div id="mars"></div>
+        <div id="saturn"></div>
+        <div id="GJ_504b"></div>
+        <div id="sr_B1620-26_B"></div>
+    </div>
+    <div id="container">
+        <div class="side">
+            <div id="shirts">shirts
+                <div class="earth shirts wardrobe"></div>
+                <div class="mars shirts wardrobe"></div>
+                <div class="saturn shirts wardrobe"></div>
+                <div class="GJ_504b shirts wardrobe"></div>
+                <div class="sr_B1620-26_B shirts wardrobe"></div>
+            </div>
+            <div id="pants">pants
+                <div class="earth pants wardrobe"></div>
+                <div class="mars pants wardrobe"></div>
+                <div class="saturn pants wardrobe"></div>
+                <div class="GJ_504b pants wardrobe"></div>
+                <div class="sr_B1620-26_B pants wardrobe"></div>
+            </div>
+        </div>
+        <div id="display">
+            <div id="player">
+                <div id="hat"></div>
+                <div id="accessories"></div>
+                <div id="shirt"></div>
+                <div id="pants"></div> 
+            </div>
+        </div>
+        <div class="side">
+            <div id="hats">hats
+                <div class="earth hats wardrobe"></div>
+                <div class="mars hats wardrobe"></div>
+                <div class="saturn hats wardrobe"></div>
+                <div class="GJ_504b hats wardrobe"></div>
+                <div class="sr_B1620-26_B hats wardrobe"></div>
+            </div>
+            <div id="accessories">accessories
+                <div class="earth accessories wardrobe"></div>
+                <div class="mars accessories wardrobe"></div>
+                <div class="saturn accessories wardrobe"></div>
+                <div class="GJ_504b accessories wardrobe"></div>
+                <div class="sr_B1620-26_B accessories wardrobe"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
