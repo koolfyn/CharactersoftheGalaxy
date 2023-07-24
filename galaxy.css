@@ -24,6 +24,7 @@ div {
 }
 .wardrobe {
     display:none;
+    height: 300px;
 }
 #player {
     background-image: url("ourGuytTWO.png");
