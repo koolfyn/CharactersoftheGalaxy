@@ -1,8 +1,10 @@
+background = document.getElementById("display")
+
 for (let planet of document.getElementsByClassName("planets")) {
     planet.addEventListener("click", changeWardrobe, false)
 }
-for (let clothe of document.getElementsByClassName("clothes")) {
-    clothe.addEventListener("click", changeClothe, false)
+for (let item of document.getElementsByClassName("items")) {
+    item.addEventListener("click", changeItem, false)
 }
 
 function changeWardrobe() {
@@ -16,8 +18,9 @@ function changeWardrobe() {
         wardrobe.style.setProperty("display", "flex")
         console.log("set flex")
     }
+    display.style.setProperty("background-image", "url("+name+"Background.png)")
 }
 
-function changeClothe() {
-    
+function changeItem() {
+    console.log(1)
 }
