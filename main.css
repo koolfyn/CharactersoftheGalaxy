@@ -1,0 +1,18 @@
+body{
+    background-image: url(webb-first-deep-field.en.jpg)
+}
+
+h1{
+    text-align: center;
+    color: white
+    
+
+}
+
+
+
+.planets{
+    display: flex;
+    display: inline-block;    
+    
+}
