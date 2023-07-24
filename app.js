@@ -1,6 +1,8 @@
 for (let planet of document.getElementsByClassName("planets")) {
     planet.addEventListener("click", changeWardrobe, false)
 }
+for (let clothe of document.get)
+
 function changeWardrobe() {
     let name = this.id
     console.log(name)
