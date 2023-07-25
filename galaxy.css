@@ -24,9 +24,27 @@ div {
 }
 .wardrobe {
     display:none;
+    height: 300px;
+    gap:20px;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
 #player {
     background-image: url("ourGuytTWO.png");
     width: 640px;
     height: 640px;
 }
+.items {
+    background-color: red;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.side {
+    background-image: url(wardrobeBackground.jpg);
+}
+/* .itemImg {
+    width: 160px;
+    height: 160px;
+} */
