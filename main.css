@@ -67,7 +67,7 @@ body{
     animation: changeBackground 10s infinite;
     animation-duration: 10s;
     animation-fill-mode: forwards;
-    text-decoration: none;
+    
 }
 #alien {
     display: flex;
@@ -85,6 +85,12 @@ body{
     width: 400px;
     margin-left: 400px;
   
+}
+
+#audiobox {
+    display: flex;
+    margin: left;
+    height: 10px;
 }
 
 @keyframes changeBackground {
