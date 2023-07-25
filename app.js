@@ -4,7 +4,7 @@ let facts = {
     mars: ["Mars is covered in soil, rock, and dust made from iron oxide which gives the surface a red rusty color.", "Mars is home to Olympus Mons, a dormant volcano and the largest volcano and highest mountain in our solar system. It is 16 miles high and 600 km across the base, making it 3x the height of Mount Everest.", "As it’s so close to Earth, Mars is the planet that humans will most likely step foot on and explore first.", "Mars’ surface has many channels, plains, and canyons which could have been caused by water erosion (water wearing away the surface). This could be evidence that open water in liquid form once existed on the surface billions of years ago.", "Mars has north and south poles like earth. The polar ice caps are covered in a layer of frozen carbon dioxide (dry ice)."],
     saturn: ["You cannot stand on Saturn.", "Saturn would float in water because it is mostly made of gas.", "Saturn has more moons than any other planet in the solar system.", "A day on Saturn is only 10.7 hours and a year is 29 Earth years.", "The day Saturday was named after Saturn."],
     GJ_504b: ["It is the lowest-mass planet ever detected around a star.","It is 460 degrees Fahrenheit (237 Celsius) which causes the pink color."],
-    "PSR_B1620-26_B": ["It takes 95 years to complete one orbit of its star,", "It is really old: 12.7 billion years old!"]
+    "PSR_B1620-26_B": ["It takes 95 years to complete one orbit of its star,", "It is really old: 12.7 billion years old! It is the oldest planet that has ever been found by the scientists."]
 }
 
 for (let planet of document.getElementsByClassName("planets")) {
