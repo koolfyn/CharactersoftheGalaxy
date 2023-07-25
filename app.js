@@ -1,4 +1,5 @@
 let background = document.getElementById("display")
+let resetButton = document.getElementById("resetButton")
 let facts = {
     earth: ["Earth rotates at 1000 miles per hour.", "Earth is 4.5 billion years old.", "Earth has three layer: the crust, the mantle, and the core.", "71% of the Earth's surface is water.", "7.4 billion people live on Earth."],
     mars: ["Mars is covered in soil, rock, and dust made from iron oxide which gives the surface a red rusty color.", "Mars is home to Olympus Mons, a dormant volcano and the largest volcano and highest mountain in our solar system. It is 16 miles high and 600 km across the base, making it 3x the height of Mount Everest.", "As it’s so close to Earth, Mars is the planet that humans will most likely step foot on and explore first.", "Mars’ surface has many channels, plains, and canyons which could have been caused by water erosion (water wearing away the surface). This could be evidence that open water in liquid form once existed on the surface billions of years ago.", "Mars has north and south poles like earth. The polar ice caps are covered in a layer of frozen carbon dioxide (dry ice)."],
@@ -6,6 +7,8 @@ let facts = {
     GJ_504b: ["It is the lowest-mass planet ever detected around a star.","It is 460 degrees Fahrenheit (237 Celsius) which causes the pink color."],
     "PSR_B1620-26_B": ["It takes 95 years to complete one orbit of its star,", "It is really old: 12.7 billion years old! It is the oldest planet that has ever been found by the scientists."]
 }
+
+resetButton.addEventListener("click", resetOutfit, false)
 
 for (let planet of document.getElementsByClassName("planets")) {
     planet.addEventListener("click", changeWardrobe, false)
@@ -55,4 +58,14 @@ function changeFacts() {
         li.textContent = fact
         factsDiv.appendChild(li)
     }
+}
+
+function resetOutfit() {
+    document.getElementById("player_neck_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
+    document.getElementById("player_shoes_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
+    document.getElementById("player_back_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
+    document.getElementById("player_waist_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
+    document.getElementById("player_pants").style.setProperty("background-image", "url(nothingPERSON.png)")
+    document.getElementById("player_shirts").style.setProperty("background-image", "url(nothingPERSON.png)")
+    document.getElementById("player_hats").style.setProperty("background-image", "url(nothingPERSON.png)")
 }
