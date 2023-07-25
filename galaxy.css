@@ -1,9 +1,7 @@
 body {
     margin:0;
 }
-div {
-    border:solid black 1px
-}
+
 .side {
     display: flex;
     flex-direction:column;
@@ -20,11 +18,16 @@ div {
 }
 .planets {
     width: 100px;
-    height: 100px
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url("planetScreens.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .wardrobe {
     display:none;
-    height: 300px;
+    height: 320px;
     gap:20px;
     flex-wrap:wrap;
     align-items: center;
@@ -58,5 +61,5 @@ div {
 }
 
 .planetsImg {
-    width: 100px;
+    width: 80px;
 }
