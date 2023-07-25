@@ -31,6 +31,7 @@ function changeItem() {
     let type = this.className.split(" ")[1]
     let name = this.children[0].name
     console.log(name)
+
     if (type=="accessories") {
         document.getElementById("player_neck_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
         document.getElementById("player_shoes_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
