@@ -1,6 +1,6 @@
 body {
     margin:0;
-}
+ }
 
 .side {
     display: flex;
@@ -17,8 +17,8 @@ body {
     align-items: center;
     margin: auto;
     background-image: url(spaceship.gif);
-    padding-top: 70px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .planets {
     width: 100px;
@@ -67,4 +67,8 @@ body {
 #shirts {
     height: 320px;
     background-image: url(shirtCOMPLETE.png);
+}
+#pants {
+    height: 320px;
+    background-image: url(pantsCOMPLETE.png);
 }
