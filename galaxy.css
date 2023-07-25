@@ -64,12 +64,7 @@ body {
 .planetsImg {
     width: 70px
 }
-
-#backButton{
-}
-
-a{
-text-decoration: none;
-color: white;
-
+#shirts {
+    height: 320px;
+    background-image: url(shirtCOMPLETE.png);
 }
