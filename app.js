@@ -41,6 +41,7 @@ function changeItem() {
         document.getElementById("player_"+type).style.setProperty("background-image", "url("+name+"PERSON.png)")
     }
 }
+<<<<<<< HEAD
 
 function changeFacts() {
     let name = this.id
@@ -56,3 +57,16 @@ function changeFacts() {
         factsDiv.appendChild(li)
     }
 }
+=======
+=======
+    console.log(1)
+}
+
+
+let myModal = document.getElementById('myModal')
+let myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+>>>>>>> 66cfdb010cb9ad431e286a94015ebd85f984c59a
