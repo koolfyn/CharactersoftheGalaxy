@@ -28,3 +28,14 @@ function changeItem() {
     console.log(name)
     document.getElementById("player_"+type).style.setProperty("background-image", "url("+name+"PERSON.png)")
 }
+=======
+    console.log(1)
+}
+
+
+let myModal = document.getElementById('myModal')
+let myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
