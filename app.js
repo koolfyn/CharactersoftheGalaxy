@@ -28,9 +28,9 @@ function changeItem() {
     console.log(name)
     document.getElementById("player_"+type).style.setProperty("background-image", "url("+name+"PERSON.png)")
 }
-=======
+
     console.log(1)
-}
+
 
 
 let myModal = document.getElementById('myModal')
