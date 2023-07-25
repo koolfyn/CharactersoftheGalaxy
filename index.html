@@ -1,19 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
+
 <link rel="stylesheet" href="galaxy.css">
+
 <body>
+
     <div id="maps">
-        <div class="planets" id="earth">earth 
-            <img src="Earth.png" alt="earth" height="85%" width="100%"></div>
-        <div class="planets" id="mars">mars  <img src="Mars.png" alt="earth" height="85%" width="100%"></div>
-        <div class="planets" id="saturn">saturn  <img src="Saturn.png" alt="earth" height="85%" width="100%"></div>
-        <div class="planets" id="GJ_504b">GJ_504b <img src="pink.png" alt = "GJ_504b" height="85%" width="100%"> </div>
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Planet Facts</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Fun Facts
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"color ="red">
+                           <b> Earth (inventions) - fantasy(many cultural references)</b>
+                            Earth rotates at 1000 miles per hour
+                            Earth is 4.5 billion years old 
+                            Earth has three layer: the crust, the mantle, and the core
+                            71% of the Earth's surface is water
+                            7.4 billion people live on Earth
+                           <b> Mars(red) red themed</b>
+                            Mars is covered in soil, rock, and dust made from iron oxide which gives the surface a red
+                            rusty color.
+                            Mars is home to Olympus Mons, a dormant volcano and the largest volcano and highest mountain
+                            in our solar system. It is 16 miles high and 600 km across the base, making it 3x the height
+                            of Mount Everest.
+                            As it’s so close to Earth, Mars is the planet that humans will most likely step foot on and
+                            explore first.
+                            Mars’ surface has many channels, plains, and canyons which could have been caused by water
+                            erosion (water wearing away the surface). This could be evidence that open water in liquid
+                            form once existed on the surface billions of years ago.
+                            Mars has north and south poles like earth. The polar ice caps are covered in a layer of
+                            frozen carbon dioxide (dry ice).
+                           <b> Saturn(rings) - hats</b>
+                            You cannot stand on Saturn.
+                            Saturn would float in water because it is mostly made of gas.
+                            Saturn has more moons than any other planet in the solar system.
+                            A day on Saturn is only 10.7 hours and a year is 29 Earth years
+                            The day Saturday was named after Saturn.
+
+                            <b>GJ 504b (pink) - barbie (all facts from NASA) </b>
+                            the lowest-mass planet ever detected around a star
+                            460 degrees Fahrenheit (237 Celsius) which causes the pink color
+                           <b>sr B1620-26 B(really old) - old fashioned OR oppenheimer :D - NASA</b> 
+                            It takes 95 years to complete one orbit of its star
+                            12.7 billion years old
+
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="planets" id="earth">earth
+            <img src="Earth.png" alt="earth" height="80%" width="100%">
+        </div>
+        <div class="planets" id="mars">mars <img src="Mars.png" alt="earth" height="80%" width="100%"></div>
+        <div class="planets" id="saturn">saturn <img src="Saturn.png" alt="earth" height="85%" width="100%"></div>
+        <div class="planets" id="GJ_504b">GJ_504b <img src="pink.png" alt="GJ_504b" height="77%" width="100%"> </div>
         <div class="planets" id="sr_B1620-26_B">sr_B1620-26_B</div>
-    </div> 
+    </div>
     <div id="container">
         <div class="side">
             <div id="shirts">shirts
@@ -36,14 +124,14 @@
                 <div id="hat"></div>
                 <div id="accessories"></div>
                 <div id="shirt"></div>
-                <div id="pants"></div> 
+                <div id="pants"></div>
             </div>
         </div>
         <div class="side">
             <div id="hats">hats
                 <div class="earth hats wardrobe">
                     <div class="items hats">
-                        <img class="itemImg" src="yellowHattTwo.png">   
+                        <img class="itemImg" src="yellowHattTwo.png">
                     </div>
                     <div class="items hats">2</div>
                     <div class="items hats">3</div>
@@ -90,4 +178,5 @@
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
