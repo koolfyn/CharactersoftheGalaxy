@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            margin:0;
-        }
-        div {
-            border:solid black 1px
-        }
-        .side: {
-            display: flex;
-            flex-direction:column;
-        }
-        #container {
-            display: grid;
-            grid-template-columns: 2fr 1fr 2fr
-        }
-        #maps {
-            height: 100px;
-            display:flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="galaxy.css">
 </head>
 <body>
     <div id="maps">
-        <div id="earth"></div>
-        <div id="mars"></div>
-        <div id="saturn"></div>
-        <div id="GJ_504b"></div>
-        <div id="sr_B1620-26_B"></div>
+        <div class="planets" id="earth">earth</div>
+        <div class="planets" id="mars">mars</div>
+        <div class="planets" id="saturn">saturn</div>
+        <div class="planets" id="GJ_504b">GJ_504b</div>
+        <div class="planets" id="sr_B1620-26_B">sr_B1620-26_B</div>
     </div>
     <div id="container">
         <div class="side">
@@ -52,15 +31,7 @@
             </div>
         </div>
         <div id="display">
-            <div id="player" style>
-                <img src= "bootsICON.png" alt="marsB"></img>
-                <img src= "bootsPERSON.png" alt="marsB"></img>
-                <img src= "headphonesICON.png" alt="marsB"></img>
-                <img src= "headphonesPERSON.png" alt="marsB"></img>
-                <img src= "pDressICON.png" alt="marsB"></img>
-                <img src= "pDressPERSON.png" alt="marsB"></img>
-                <img src= "wDressICON.png" alt="marsB"></img>
-                <img src= "wDressPERSON.png" alt="marsB"></img>
+            <div id="player">
                 <div id="hat"></div>
                 <div id="accessories"></div>
                 <div id="shirt"></div>
@@ -69,11 +40,43 @@
         </div>
         <div class="side">
             <div id="hats">hats
-                <div class="earth hats wardrobe"></div>
-                <div class="mars hats wardrobe"></div>
-                <div class="saturn hats wardrobe"></div>
-                <div class="GJ_504b hats wardrobe"></div>
-                <div class="sr_B1620-26_B hats wardrobe"></div>
+                <div class="earth hats wardrobe">
+                    <div class="items hats">
+                        <img class="itemImg" src="yellowHattTwo.png">   
+                    </div>
+                    <div class="items hats">2</div>
+                    <div class="items hats">3</div>
+                    <div class="items hats">4</div>
+                    <div class="items hats">5</div>
+                </div>
+                <div class="mars hats wardrobe">
+                    <div class="items hats">1</div>
+                    <div class="items hats">2</div>
+                    <div class="items hats">3</div>
+                    <div class="items hats">4</div>
+                    <div class="items hats">5</div>
+                </div>
+                <div class="saturn hats wardrobe">
+                    <div class="items hats">1</div>
+                    <div class="items hats">2</div>
+                    <div class="items hats">3</div>
+                    <div class="items hats">4</div>
+                    <div class="items hats">5</div>
+                </div>
+                <div class="GJ_504b hats wardrobe">
+                    <div class="items hats">1</div>
+                    <div class="items hats">2</div>
+                    <div class="items hats">3</div>
+                    <div class="items hats">4</div>
+                    <div class="items hats">5</div>
+                </div>
+                <div class="sr_B1620-26_B hats wardrobe">
+                    <div class="items hats">1</div>
+                    <div class="items hats">2</div>
+                    <div class="items hats">3</div>
+                    <div class="items hats">4</div>
+                    <div class="items hats">5</div>
+                </div>
             </div>
             <div id="accessories">accessories
                 <div class="earth accessories wardrobe"></div>
@@ -84,5 +87,6 @@
             </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
