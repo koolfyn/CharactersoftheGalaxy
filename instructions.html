@@ -34,25 +34,29 @@
         font-size: 25px;
         font-weight: bolder;
     }
-  
-
-    
 
     button {
         display: flex;
         width: 80px;
         height: 40px;   
         margin: auto;
+        margin-right: 25%;
+        margin-top: -4%;
         flex-direction: column;
-        text-decoration: none;
         background-color:rgb(205, 144, 223);
         border-radius: 10px;
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
     }
-    
+    button a {
+        text-decoration: none;
+    }
+
+    audio {
+        display: flex;
+        margin-left: 10%;
+    }
+
 </style>
 <body>
 
@@ -74,10 +78,11 @@
     </ul>
     <p>Remember, the universe is your fashion playground, so dive in and create a character that's out of this world! Enjoy your intergalactic adventure!
     </p>
+    <audio controls loop autoplay>
+        <source src = "sedativebg.mp3" type="audio/mpeg">
+    </audio>
 
     <div><button id="button"><a href="main.html">HOME</a></button></div>
-
-    <h1>Game Instructions</h1> + <button id="back"><a href="main.html"> Back to start</a></button>
 
 </body>
 </html>
