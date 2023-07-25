@@ -7,6 +7,7 @@ for (let item of document.getElementsByClassName("items")) {
     item.addEventListener("click", changeItem, false)
 }
 
+
 function changeWardrobe() {
     let name = this.id
     console.log(name)
@@ -22,5 +23,8 @@ function changeWardrobe() {
 }
 
 function changeItem() {
-    console.log(1)
+    let type = this.className.split(" ")[1]
+    let name = this.children[0].name
+    console.log(name)
+    document.getElementById("player_"+type).style.setProperty("background-image", "url("+name+"PERSON.png)")
 }
