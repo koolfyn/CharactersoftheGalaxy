@@ -51,6 +51,7 @@ body {
 }
 .side {
     background-image: url(wardrobeBackground.jpg);
+    border: solid black 10px;
 }
 
 .display {
@@ -65,18 +66,25 @@ body {
     width: 70px
 }
 #shirts {
-    height: 320px;
+    height: 318px;
     background-image: url(shirtCOMPLETE.png);
+    border: solid gray 1px;
 }
 #pants {
-    height: 320px;
+    height: 318px;
     background-image: url(pantsCOMPLETE.png);
+    border: solid gray 1px;
 }
 #hats {
-    height: 320px;
+    height: 318px;
     background-image: url(hatsCOMPLETE.png);
+    border: solid gray 1px;
 }
 #accessories {
-    height: 320px;
+    height: 318px;
     background-image: url(accessoriesCOMPLETE.png);
+    border: solid gray 1px;
+}
+#display {
+    border: solid gray 10px;
 }
