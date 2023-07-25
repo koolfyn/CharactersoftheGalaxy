@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="galaxy.css">
+    <title>Dress-Up</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </head>
-
-<link rel="stylesheet" href="galaxy.css">
-
 <body>
-
     <div id="maps">
-
-        <div class="planets" id="earth">
-            <img src="earth.png" class="planetsImg">
-        </div>
-        <div class="planets" id="mars">
-            <img src="mars.png" class="planetsImg">
-        </div>
-        <div class="planets" id="saturn">
-            <img src="saturn.png" class="planetsImg">
-        </div>
-        <div class="planets" id="GJ_504b">GJ_504b</div>
-
-    
-       
         <div class="modal" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -57,229 +46,193 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h7 class="modal-title" id="exampleModalLabel"color ="red">
-                           <ul><b> Earth (inventions) - fantasy(many cultural references)</b>
-                           <li> Earth rotates at 1000 miles per hour</li>
-                            <li>is 4.5 billion years old </li>
-                            <li>Earth has three layer: the crust, the mantle, and the core</li>
-                           <li> 71% of the Earth's surface is water</li>
-                            <li>7.4 billion people live on Earth</li>
-                        </ul>
-                           <ul><b> Mars(red) red themed</b>
-                            <li> is covered in soil, rock, and dust made from iron oxide which gives the surface a red
-                            rusty color.</li>
-                            <li> is home to Olympus Mons, a dormant volcano and the largest volcano and highest mountain
-                            in our solar system. It is 16 miles high and 600 km across the base, making it 3x the height
-                            of Mount Everest.</li>
-                            <li> it’s so close to Earth, Mars is the planet that humans will most likely step foot on and
-                            explore first.</li>
-                            <li>’ surface has many channels, plains, and canyons which could have been caused by water
-                            erosion (water wearing away the surface). This could be evidence that open water in liquid
-                            form once existed on the surface billions of years ago.</li>
-                            <li> has north and south poles like earth. The polar ice caps are covered in a layer of
-                            frozen carbon dioxide (dry ice).</li>
+                        <h5 class="modal-title" id="exampleModalLabel" color="red">
+                            <b id="title">Click on a planet to start</b>
+                            <ul id="facts">
                             </ul>
-                          <ul> <b> Saturn(rings) - hats</b>
-                           <li> You cannot stand on Saturn.</li>
-                           <li> Saturn would float in water because it is mostly made of gas.</li>
-                           <li> Saturn has more moons than any other planet in the solar system.</li>
-                           <li> A day on Saturn is only 10.7 hours and a year is 29 Earth years</li>
-                           <li> The day Saturday was named after Saturn.</li>
-                           </ul>
-
-                            <ul><b>GJ 504b (pink) - barbie (all facts from NASA) </b>
-                            <li> lowest-mass planet ever detected around a star</li>
-                            <li> degrees Fahrenheit (237 Celsius) which causes the pink color</li>
-                           </ul>
-                           <ul> <b>sr B1620-26 B(really old) - old fashioned OR oppenheimer :D - NASA</b> 
-                           <li> It takes 95 years to complete one orbit of its star</li>
-                           <li> 12.7 billion years old</li>
-                            </ul>
-
-                        </h7>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                       Thank you for Reading!
+                        </h5>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-        <div class="planets" id="earth">earth
-            <img src="Earth.png" alt="earth" height="80%" width="100%">
+        <div class="planets" id="earth">
+            <img src="earth.png" class="planetsImg">
         </div>
-        <div class="planets" id="mars">mars <img src="Mars.png" alt="earth" height="80%" width="100%"></div>
-        <div class="planets" id="saturn">saturn <img src="Saturn.png" alt="earth" height="85%" width="100%"></div>
-        <div class="planets" id="GJ_504b">GJ_504b <img src="pink.png" alt="GJ_504b" height="77%" width="100%"> </div>
-
-        <div class="planets" id="sr_B1620-26_B">sr_B1620-26_B</div>
-        <button class="btn btn-primary"><a href ="main.html"> back to main </a> </button>
+        <div class="planets" id="mars">
+            <img src="mars.png" class="planetsImg">
+        </div>
+        <div class="planets" id="saturn">
+            <img src="saturn.png" class="planetsImg">
+        </div>
+        <div class="planets" id="GJ_504b">
+            <img src="GJ_504b.png" class="planetsImg">
+        </div>
+        <div class="planets" id="PSR_B1620-26_B">
+            <img src="psr_B1620-26_B.png" class="planetsImg">
+        </div>
     </div>
-
-   
     <div id="container">
         <div class="side">
-            <div id="shirts">shirts
+            <div id="shirts">
                 <div class="earth shirts wardrobe">
                     <div class="items shirts">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                     <div class="items shirts">
-                        <img class="itemImg" src="pDressICON.png" name="pDress">   
+                        <img class="itemImg" src="pDressICON.png" name="pDress">
                     </div>
                     <div class="items shirts">
-                        <img class="itemImg" src="wDressICON.png" name="wDress">   
+                        <img class="itemImg" src="wDressICON.png" name="wDress">
                     </div>
                 </div>
                 <div class="mars shirts wardrobe">
                     <div class="items shirts">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                     <div class="items shirts">
-                        <img class="itemImg" src="redCapeICON.png" name="redCape">   
+                        <img class="itemImg" src="redCapeICON.png" name="redCape">
                     </div>
                 </div>
                 <div class="saturn shirts wardrobe">
                     <div class="items shirts">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
                 <div class="GJ_504b shirts wardrobe">
                     <div class="items shirts">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
-                <div class="sr_B1620-26_B shirts wardrobe">
+                <div class="PSR_B1620-26_B shirts wardrobe">
                     <div class="items shirts">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
             </div>
-            <div id="pants">pants
+            <div id="pants">
                 <div class="earth pants wardrobe">
                     <div class="items pants">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
                 <div class="mars pants wardrobe">
                     <div class="items pants">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
                 <div class="saturn pants wardrobe">
                     <div class="items pants">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
                 <div class="GJ_504b pants wardrobe">
                     <div class="items pants">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
-                <div class="sr_B1620-26_B pants wardrobe">                    
+                <div class="PSR_B1620-26_B pants wardrobe">
                     <div class="items pants">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
             </div>
         </div>
         <div id="display">
             <div id="player">
-
-                <div id="player_accessories" class="display">
+                <div id="player_back_accessories" class="display">
                     <div id="player_pants" class="display">
                         <div id="player_shirts" class="display">
-                            <div id="player_hats" class="display"></div>
+                            <div id="player_hats" class="display">
+                                <div id="player_neck_accessories" class="display">
+                                    <div id="player_waist_accessories" class="display">
+                                        <div id="player_shoes_accessories" class="display"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
-
-                <div id="hat"></div>
-                <div id="accessories"></div>
-                <div id="shirt"></div>
-                <div id="pants"></div>
-
             </div>
         </div>
         <div class="side">
-            <div id="hats">hats
+            <div id="hats">
                 <div class="earth hats wardrobe">
                     <div class="items hats">
-
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                     <div class="items hats">
-                        <img class="itemImg" src="yHatICON.png" name="yHat">   
+                        <img class="itemImg" src="yHatICON.png" name="yHat">
                     </div>
                     <div class="items hats">
-                        <img class="itemImg" src="headphonesICON.png" name="headphones">   
-
-                        <img class="itemImg" src="yellowHattTwo.png">
-
+                        <img class="itemImg" src="headphonesICON.png" name="headphones">
                     </div>
                 </div>
                 <div class="mars hats wardrobe">
                     <div class="items hats">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                     <div class="items hats">
-                        <img class="itemImg" src="hornsICON.png" name="horns">   
+                        <img class="itemImg" src="hornsICON.png" name="horns">
                     </div>
                 </div>
                 <div class="saturn hats wardrobe">
                     <div class="items hats">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
+                    </div>
+                    <div class="items hats">
+                        <img class="itemImg" src="sunHatICON.png" name="sunHat">
                     </div>
                 </div>
                 <div class="GJ_504b hats wardrobe">
                     <div class="items hats">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
-                <div class="sr_B1620-26_B hats wardrobe">
+                <div class="PSR_B1620-26_B hats wardrobe">
                     <div class="items hats">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
             </div>
-            <div id="accessories">accessories
+            <div id="accessories">
                 <div class="earth accessories wardrobe">
                     <div class="items accessories">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
-                    <div class="items accessories">
-                        <img class="itemImg" src="bootsICON.png" name="boots">   
+                    <div class="items shoes_accessories">
+                        <img class="itemImg" src="bootsICON.png" name="boots">
                     </div>
                 </div>
                 <div class="mars accessories wardrobe">
                     <div class="items accessories">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
-                    <div class="items accessories">
-                        <img class="itemImg" src="tailIcon.png" name="tail">   
+                    <div class="items neck_accessories">
+                        <img class="itemImg" src="scarfICON.png" name="scarf">
+                    </div>
+                    <div class="items back_accessories">
+                        <img class="itemImg" src="tailIcon.png" name="tail">
                     </div>
                 </div>
                 <div class="saturn accessories wardrobe">
                     <div class="items accessories">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
+                    </div>
+                    <div class="items waist_accessories">
+                        <img class="itemImg" src="beltICON.png" name="belt">
                     </div>
                 </div>
                 <div class="GJ_504b accessories wardrobe">
                     <div class="items accessories">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
-                <div class="sr_B1620-26_B accessories wardrobe">
+                <div class="PSR_B1620-26_B accessories wardrobe">
                     <div class="items accessories">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">   
+                        <img class="itemImg" src="nothingIcon.png" name="nothing">
                     </div>
                 </div>
             </div>
