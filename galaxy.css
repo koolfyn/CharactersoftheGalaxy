@@ -44,7 +44,7 @@ body {
     position: relative;
 }
 .items {
-    background-color: red;
+    background-image: url(itemFrame.png);
     width: 100px;
     display: flex;
     flex-direction: column;
@@ -71,4 +71,12 @@ body {
 #pants {
     height: 320px;
     background-image: url(pantsCOMPLETE.png);
+}
+#hats {
+    height: 320px;
+    background-image: url(hatsCOMPLETE.png);
+}
+#accessories {
+    height: 320px;
+    background-image: url(accessoriesCOMPLETE.png);
 }
