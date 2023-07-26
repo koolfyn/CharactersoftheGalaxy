@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Creators</title>
+</head>
+<style>
+    button a {
+        text-decoration: none;
+    }
+    #home {
+        background-color: rgb(197, 245, 37);
+        width: 70%;
+        height: 30%;
+        font-size: 25px;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    body {
+        background-image: url(spacebg5.jpg);
+      
+    }
+    h1 {
+        text-align: center;
+        color: aquamarine;
+    }
+    p {
+        color: rgb(54, 115, 168);
+        margin: auto;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-gap: 20px;
+        justify-content: center;
+        margin: 20px;
+       
+    }
+    .creator {
+        display: flex;
+        display: inline-block;
+        background-color: rgb(203, 148, 231);
+        color: bisque;
+        padding: 20px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .buttons{
+    display: flex;
+    width: 25%;   
+    height: 40%;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+    text-decoration: none;
+}
+
+    img {
+        float:right;
+        height: 20%;
+        width: 20%;
+        gap: 0;
+    }
+</style>
+<body>
+    <h1>About Us</h1>
+    <div class="grid">
+        <div class="creator">
+            <h2>Ivan Tsang</h2>
+            <p>I'm 15, a rising junior from Philadelphia, PA. I started coding when I joined my school's robotics team last year (GO ROBOLANCERS!) I like to play badminton and socialize with my friends. I am pursuing a career in the computer science field.</p>
+        </div>
+        <div class="creator">
+            <h2>Nguyen Ngo Anh Tuan</h2>
+            <p>I’m 17 years old and will enter senior this year. I started coding after taking an extra class in Python in secondary school with my classmates. From then, I have also experienced some other programming languages including java and c++. In free time I’m in favor of hanging out with my friends or playing video games. My dream is to pursue computer science in the college.
+            </p>
+        </div>
+        <div class="creator">
+            <h2>Meena Krishna Kumar</h2>
+            <p>I am 15 years old and a rising junior. I am from Lexington, Massachusetts. I started coding in my freshman year of high school. In my free time, I like to hang out with my friends and paint. I hope to pursue a career in the STEM field in the future.
+            </p>
+        </div>
+        <div class="creator">
+            <h2>Grace</h2>
+            <p>Information about Grace goes here.</p>
+        </div>
+        <div class="creator">
+            <h2>Joseph Amprey</h2>
+            <p> I'm 16 years old and a rising junior from Washington, DC. I first started coding around last year when I took a class about Java my sophomore year. Some fun things I like to do include playing basketball, investing in stocks, and hanging out with friends. I plan to learn computer science and finance in college.
+            </p>
+        </div>
+        <div class="creator">
+            <h2>Info</h2>
+            <p> We are the Penn Bluers. We are students in the 2023 Penn Summer Coding Academy. We thank our TAs and our wonderful instructor Mr. Mike for the support and guidance they gave us throughout the course.
+            </p>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="home"><a href="main.html">HOME</a></button>
+    </div>
+    <img src="saslogo.jpg" alt="saslogo">
+</body>
+</html>
