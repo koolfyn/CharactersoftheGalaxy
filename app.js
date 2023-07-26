@@ -33,17 +33,30 @@ function changeWardrobe() {
 function changeItem() {
     let type = this.className.split(" ")[1]
     let name = this.children[0].name
-    console.log(name)
+    let old = document.getElementsByName(document.getElementById("player_"+type).current)[0]
+    if (old!=undefined) {
+        old.parentElement.addEventListener("click", changeItem, false)
+    }
 
     if (type=="accessories") {
         document.getElementById("player_neck_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
         document.getElementById("player_shoes_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
         document.getElementById("player_back_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
         document.getElementById("player_waist_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
+        document.getElementById("player_outer_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     }
     else {
         document.getElementById("player_"+type).style.setProperty("background-image", "url("+name+"PERSON.png)")
+        document.getElementById("player_"+type).current = name
+        this.removeEventListener("click", changeItem, false)
+        this.addEventListener("click", removeItem, false)
     }
+}
+
+function removeItem() {
+    let type = this.className.split(" ")[1]
+    document.getElementById("player_"+type).style.setProperty("background-image", "url(nothingPERSON.png)")
+    this.addEventListener("click", changeItem, false)
 }
 
 function changeFacts() {
@@ -65,6 +78,7 @@ function resetOutfit() {
     document.getElementById("player_neck_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     document.getElementById("player_shoes_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     document.getElementById("player_back_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
+    document.getElementById("player_outer_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     document.getElementById("player_waist_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     document.getElementById("player_pants").style.setProperty("background-image", "url(nothingPERSON.png)")
     document.getElementById("player_shirts").style.setProperty("background-image", "url(nothingPERSON.png)")
