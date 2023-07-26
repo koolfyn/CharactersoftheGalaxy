@@ -20,7 +20,7 @@ audio {
     height: 30%;
     font-size:25px;
     border-radius: 10px;
-
+    margin: auto;
 }
 
 #instructions {
@@ -29,6 +29,7 @@ audio {
     height: 30%;
     font-size: 25px;
     border-radius: 10px;
+    margin: auto;
 }
 
 #creator {
@@ -37,6 +38,7 @@ audio {
     height: 30%;
     font-size: 25px;
     border-radius: 10px;
+    margin: auto;
 }
 
 button a {
