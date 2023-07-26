@@ -39,10 +39,19 @@ function changeItem() {
         document.getElementById("player_shoes_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
         document.getElementById("player_back_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
         document.getElementById("player_waist_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
+        document.getElementById("player_outer_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     }
     else {
         document.getElementById("player_"+type).style.setProperty("background-image", "url("+name+"PERSON.png)")
+        this.removeEventListener("click", changeItem, false)
+        this.addEventListener("click", removeItem, false)
     }
+}
+
+function removeItem() {
+    let type = this.className.split(" ")[1]
+    document.getElementById("player_"+type).style.setProperty("background-image", "url(nothingPERSON.png)")
+    this.addEventListener("click", changeItem, false)
 }
 
 function changeFacts() {
@@ -64,6 +73,7 @@ function resetOutfit() {
     document.getElementById("player_neck_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     document.getElementById("player_shoes_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     document.getElementById("player_back_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
+    document.getElementById("player_outer_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     document.getElementById("player_waist_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     document.getElementById("player_pants").style.setProperty("background-image", "url(nothingPERSON.png)")
     document.getElementById("player_shirts").style.setProperty("background-image", "url(nothingPERSON.png)")
