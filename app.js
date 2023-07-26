@@ -37,6 +37,7 @@ function changeItem() {
     if (old!=undefined) {
         old.parentElement.addEventListener("click", changeItem, false)
     }
+
     if (type=="accessories") {
         document.getElementById("player_neck_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
         document.getElementById("player_shoes_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
