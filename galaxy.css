@@ -1,6 +1,6 @@
 body {
     margin:0;
-}
+ }
 
 .side {
     display: flex;
@@ -18,8 +18,8 @@ body {
     align-items: center;
     margin: auto;
     background-image: url(spaceship.gif);
-    padding-top: 70px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .planets {
     width: 100px;
@@ -45,23 +45,46 @@ body {
     position: relative;
 }
 .items {
-    background-color: red;
+    background-image: url(itemFrame.png);
     width: 100px;
     display: flex;
     flex-direction: column;
 }
 .side {
     background-image: url(wardrobeBackground.jpg);
+    border: solid black 10px;
 }
 
 .display {
     width: 640px;
     height: 640px;
     position: relative;
-    right:1px;
-    bottom:1px;
 }
 
 .planetsImg {
     width: 70px
+}
+#shirts {
+    height: 318px;
+    background-image: url(shirtCOMPLETE.png);
+    border: solid gray 1px;
+}
+#pants {
+    height: 318px;
+    background-image: url(pantsCOMPLETE.png);
+    border: solid gray 1px;
+}
+#hats {
+    height: 318px;
+    background-image: url(hatsCOMPLETE.png);
+    border: solid gray 1px;
+}
+#accessories {
+    height: 318px;
+    background-image: url(accessoriesCOMPLETE.png);
+    border: solid gray 1px;
+}
+#display {
+    border: solid gray 10px;
+    background-image: url(spaceshipWindow.png);
 }
