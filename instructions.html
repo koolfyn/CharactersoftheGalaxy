@@ -35,20 +35,28 @@
         font-weight: bolder;
     }
 
-    button {
-        display: flex;
-        height: 40px;   
-        background-color:rgb(205, 144, 223);
-        border-radius: 10px;
-        font-size: 20px;
-        align-items: center;
-        font-weight:bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    .button {
+        background-image: url(button.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: 130px 60px;
+        border: none;
+        padding-top:15px;
+        width: 130px;
+        height: 60px;
         text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .button:hover {
+        background-image: url(buttonPushed.png);
     }
     a {
         text-decoration: none;
         text-align: center;
+        color:white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
     }
     #container {
         display: flex;
@@ -80,7 +88,7 @@
         <audio controls loop autoplay>
             <source src = "sedativebg.mp3" type="audio/mpeg">
         </audio>
-        <button id="button"><a href="main.html">HOME</a></button>
+        <div class="button"><a href="main.html">HOME</a></div>
     </div>
 
 </body>
