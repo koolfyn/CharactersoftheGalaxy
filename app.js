@@ -4,10 +4,10 @@ let facts = {
     earth: ["Earth rotates at 1000 miles per hour.", "Earth is 4.5 billion years old.", "Earth has three layers: the crust, the mantle, and the core.", "71% of the Earth's surface is water.", "8 billion people live on Earth."],
     mars: ["Mars is covered in soil, rock, and dust made from iron oxide which gives the surface a red rusty color.", "Mars is home to Olympus Mons, a dormant volcano and the largest volcano and highest mountain in our solar system. It is 16 miles high and 600 km across the base, making it 3x the height of Mount Everest.", "As it’s so close to Earth, Mars is the planet that humans will most likely step foot on and explore first.", "Mars’ surface has many channels, plains, and canyons which could have been caused by water erosion (water wearing away the surface). This could be evidence that open water in liquid form once existed on the surface billions of years ago.", "Mars has north and south poles like earth. The polar ice caps are covered in a layer of frozen carbon dioxide (dry ice)."],
     saturn: ["You cannot stand on Saturn.", "Saturn would float in water because it is mostly made of gas.", "Saturn has more moons than any other planet in the solar system.", "A day on Saturn is only 10.7 hours and a year is 29 Earth years.", "The day Saturday was named after Saturn."],
-    GJ_504b: ["It is the lowest-mass planet ever detected around a star.","It is 460 degrees Fahrenheit (237 Celsius) which causes the pink color."],
+    GJ_504b: ["It is the lowest-mass planet ever detected around a star.", "It is 460 degrees Fahrenheit (237 Celsius) which causes the pink color."],
     "PSR_B1620-26_B": ["It takes 95 years to complete one orbit of its star,", "It is really old: 12.7 billion years old! It is the oldest planet that has ever been found by the scientists."]
 }
-
+let accessories_list=["player_neck_accessories", "player_waist_accessories", "player_outer_accessories","player_back_accessories","player_shoes_accessories"]
 resetButton.addEventListener("click", resetOutfit, false)
 
 for (let planet of document.getElementsByClassName("planets")) {
@@ -27,19 +27,27 @@ function changeWardrobe() {
     for (let wardrobe of document.getElementsByClassName(name)) {
         wardrobe.style.setProperty("display", "flex")
     }
-    display.style.setProperty("background-image", "url("+name+"Background.png)")
+    display.style.setProperty("background-image", "url(" + name + "Background.png)")
 }
 
 function changeItem() {
     let type = this.className.split(" ")[1]
     let name = this.children[0].name
-    if (type!="accessories") {
-        let old = document.getElementsByName(document.getElementById("player_"+type).current)[0]
-        if (old!=undefined) {
+    if (type != "accessories") {
+        let old = document.getElementsByName(document.getElementById("player_" + type).current)[0]
+        if (old != undefined) {
             old.parentElement.addEventListener("click", changeItem, false)
         }
     }
-    if (type=="accessories") {
+    else {
+        for (let accessory of accessories_list) {
+            let old = document.getElementsByName(document.getElementById(accessory).current)[0]
+            if (old != undefined) {
+                old.parentElement.addEventListener("click", changeItem, false)
+            }
+        }
+    }
+    if (type == "accessories") {
         document.getElementById("player_neck_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
         document.getElementById("player_shoes_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
         document.getElementById("player_back_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
@@ -47,8 +55,8 @@ function changeItem() {
         document.getElementById("player_waist_accessories").style.setProperty("background-image", "url(nothingPERSON.png)")
     }
     else {
-        document.getElementById("player_"+type).style.setProperty("background-image", "url("+name+"PERSON.png)")
-        document.getElementById("player_"+type).current = name
+        document.getElementById("player_" + type).style.setProperty("background-image", "url(" + name + "PERSON.png)")
+        document.getElementById("player_" + type).current = name
         this.removeEventListener("click", changeItem, false)
         this.addEventListener("click", removeItem, false)
     }
@@ -56,16 +64,16 @@ function changeItem() {
 
 function removeItem() {
     let type = this.className.split(" ")[1]
-    document.getElementById("player_"+type).style.setProperty("background-image", "url(nothingPERSON.png)")
+    document.getElementById("player_" + type).style.setProperty("background-image", "url(nothingPERSON.png)")
     this.addEventListener("click", changeItem, false)
 }
 
 function changeFacts() {
     let name = this.id
     let factsList = facts[name]
-    document.getElementById("title").textContent = name[0].toUpperCase()+name.slice(1)
+    document.getElementById("title").textContent = name[0].toUpperCase() + name.slice(1)
     let factsDiv = document.getElementById("facts")
-    while(factsDiv.firstChild) {
+    while (factsDiv.firstChild) {
         factsDiv.removeChild(factsDiv.firstChild)
     }
     for (let fact of factsList) {
