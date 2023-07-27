@@ -69,8 +69,8 @@ a {
 body{
     width: 100%;
     height: 100%;
-    animation: changeBackground 5s infinite;
-    animation-duration: 5s;
+    animation: changeBackground 10s infinite;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
    
 }
@@ -108,7 +108,6 @@ body{
     border-radius: 5px;
 }  
 
-
   p {
     text-align: center;
   }
@@ -119,12 +118,20 @@ body{
         background-image: url(background.jpg);
         background-size: cover;
     }
-    50% {
+    25% {
         background-image: url(space2.jpg);
         background-size: cover;
     }
-    100% {
+    50% {
         background-image:url(space3.jpg);
+        background-size: cover;
+    }
+    75% {
+        background-image: url(space4.jpg);
+        background-size:cover;
+    }
+    100% {
+        background-image: url(background.jpg);
         background-size: cover;
     }
 }
