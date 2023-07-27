@@ -15,21 +15,21 @@
        
     }
     h2 {
-        color: rgb(183, 125, 201);
+        color: rgb(230, 156, 255);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-align: center;
         text-decoration: none;
     }
     li {
         /* background-color:rgb(107, 49, 125); */
-        color: rgb(148, 80, 169);
+        color: rgb(239, 215, 247);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         margin-top: 10px;
         font-weight: bolder;
     }
     p{
         /* background-color: rgb(89, 9, 113); */
-        color: rgb(239, 215, 247);
+        color: rgb(230, 156, 255);
         text-align: center;
         font-size: 25px;
         font-weight: bolder;
@@ -37,24 +37,22 @@
 
     button {
         display: flex;
-        width: 80px;
         height: 40px;   
-        margin: auto;
-        margin-right: 25%;
-        margin-top: -4%;
-        flex-direction: column;
         background-color:rgb(205, 144, 223);
         border-radius: 10px;
         font-size: 20px;
+        align-items: center;
+        font-weight:bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
     }
-    button a {
+    a {
         text-decoration: none;
+        text-align: center;
     }
-
-    audio {
+    #container {
         display: flex;
-        margin-left: 10%;
+        justify-content: space-around;
     }
 
 </style>
@@ -78,11 +76,12 @@
     </ul>
     <p>Remember, the universe is your fashion playground, so dive in and create a character that's out of this world! Enjoy your intergalactic adventure!
     </p>
-    <audio controls loop autoplay>
-        <source src = "sedativebg.mp3" type="audio/mpeg">
-    </audio>
-
-    <div><button id="button"><a href="main.html">HOME</a></button></div>
+    <div id="container">
+        <audio controls loop autoplay>
+            <source src = "sedativebg.mp3" type="audio/mpeg">
+        </audio>
+        <button id="button"><a href="main.html">HOME</a></button>
+    </div>
 
 </body>
 </html>
