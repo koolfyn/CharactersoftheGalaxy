@@ -60,21 +60,17 @@ body{
 }
 #alien {
     display: flex;
-    /* display: inline-block; */
     height: 55%;
     width: 25%;
     margin-left: 4%;
-    /* margin-bottom: 22%; */
 }
 
 #ufo {
     display: flex;
-    /* display: inline-block; */
-    height: 35%;
+    height:35%;
     width: 20%;
     margin-left: 45%;
     margin-top: 5%;
-  
 }
 
 #audiobox {
@@ -92,13 +88,8 @@ body{
     font-size: 16px;
     border-radius: 5px;
 }  
-#container {
-    display: flex;
-    flex-direction: row;
-}
 
-
-  p {
+p {
     text-align: center;
   }
 
@@ -124,5 +115,8 @@ body{
         background-size: cover;
     }
 }
-
+#container {
+    display: flex;
+    flex-direction: row;
+}
 
