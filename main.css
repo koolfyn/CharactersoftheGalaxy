@@ -20,6 +20,7 @@ audio {
     height: 30%;
     font-size:25px;
     border-radius: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: auto;
 }
 
@@ -49,7 +50,7 @@ button a {
 .buttons{
     display: flex;
     width: 25%;   
-    height: 40%;
+    height: 45%;
     margin: auto;
     flex-direction: column;
     gap: 20px;
@@ -94,20 +95,20 @@ body{
 }
 #alien {
     display: flex;
-    display: inline-block;
+    /* display: inline-block; */
     height: 55%;
     width: 25%;
     margin-left: 4%;
-    margin-bottom: 22%;
+    /* margin-bottom: 22%; */
 }
 
 #ufo {
     display: flex;
-    display: inline-block;
-    height: 30%;
-    width: 30%;
-    margin-left: 35%;
-    margin-bottom: 15%;
+    /* display: inline-block; */
+    height: 35%;
+    width: 20%;
+    margin-left: 45%;
+    margin-top: 5%;
   
 }
 
@@ -126,6 +127,11 @@ body{
     font-size: 16px;
     border-radius: 5px;
 }  
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
 
   p {
     text-align: center;
