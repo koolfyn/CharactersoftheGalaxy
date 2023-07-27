@@ -51,15 +51,31 @@
 
     }
 
-    .buttons{
-    display: flex;
-    width: 25%;   
-    height: 40%;
-    margin: auto;
-    flex-direction: column;
-    gap: 20px;
-    text-decoration: none;
-}
+    .button{
+        background-image: url(button.png);
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: 250px 60px;
+        border: none;
+        padding-top:15px;
+        width: 250px;
+        height: 60px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .button:hover {
+        background-image: url(buttonPushed.png);
+    }
+
+    a {
+        text-decoration: none;
+        color:white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
     img {
         float:right;
@@ -77,7 +93,7 @@
         </div>
         <div class="creator">
             <h2>Nguyen Ngo Anh Tuan</h2>
-            <p>I’m 17 years old and will enter senior this year. I started coding after taking an extra class in Python in secondary school with my classmates. From then, I have also experienced some other programming languages including java and c++. In free time I’m in favor of hanging out with my friends or playing video games. My dream is to pursue computer science in the college.
+            <p>I’m a 17 year-old rising senior from Hanoi, Vietnam. I started coding after taking an extra class in Python in secondary school with my classmates. From then, I have also experienced some other programming languages including java and c++. In free time I’m in favor of hanging out with my friends or playing video games. My dream is to pursue computer science in the college.
             </p>
         </div>
         <div class="creator">
@@ -100,9 +116,7 @@
             </p>
         </div>
     </div>
-    <div class="buttons">
-        <button id="home"><a href="main.html">HOME</a></button>
-    </div>
+    <div class="button"><a href="main.html">HOME</a></div>
     <img src="saslogo.jpg" alt="saslogo">
 </body>
 </html>
