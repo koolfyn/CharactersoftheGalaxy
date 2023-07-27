@@ -69,20 +69,17 @@ body{
 }
 #alien {
     display: flex;
-    display: inline-block;
     height: 55%;
     width: 25%;
     margin-left: 4%;
-    margin-bottom: 22%;
 }
 
 #ufo {
     display: flex;
-    display: inline-block;
-    height: 30%;
-    width: 30%;
-    margin-left: 35%;
-    margin-bottom: 15%;
+    height:35%;
+    width: 20%;
+    margin-left: 45%;
+    margin-top: 5%;
   
 }
 
@@ -120,5 +117,8 @@ body{
         background-size: cover;
     }
 }
-
+#container {
+    display: flex;
+    flex-direction: row;
+}
 
