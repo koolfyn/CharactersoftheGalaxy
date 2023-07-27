@@ -69,8 +69,8 @@ a {
 body{
     width: 100%;
     height: 100%;
-    animation: changeBackground 10s infinite;
-    animation-duration: 10s;
+    animation: changeBackground 15s infinite;
+    animation-duration: 15s;
     animation-fill-mode: forwards;
    
 }
@@ -112,7 +112,6 @@ body{
     text-align: center;
   }
 
-
 @keyframes changeBackground {
     0% {
         background-image: url(background.jpg);
@@ -127,8 +126,8 @@ body{
         background-size: cover;
     }
     75% {
-        background-image: url(space4.jpg);
-        background-size:cover;
+        background-image: url(spacebg6.jpg);
+        background-size: cover;
     }
     100% {
         background-image: url(background.jpg);
@@ -139,5 +138,4 @@ body{
     display: flex;
     flex-direction: row;
 }
-
 
