@@ -3,279 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dress-Up</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="galaxy.css">
-    <title>Dress-Up</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <title>Characters of the Galaxy</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <div id="maps">
-        <div class="modal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Planet Facts</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            ⓘ
-        </button>
+<div>
+<h1>Welcome to Characters of the Galaxy!</h1>
+<div id = "audiobox">
+<audio controls loop autoplay>
+    <source src = "bgmusic.mp3" type="audio/mpeg">
+</audio></div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel" color="red">
-                            <b id="title">Click on a planet to start</b>
-                            <ul id="facts">
-                            </ul>
-                        </h5>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="planets" id="earth">
-            <img src="earth.png" class="planetsImg">
-        </div>
-        <div class="planets" id="mars">
-            <img src="mars.png" class="planetsImg">
-        </div>
-        <div class="planets" id="saturn">
-            <img src="saturn.png" class="planetsImg">
-        </div>
-        <div class="planets" id="GJ_504b">
-            <img src="GJ_504b.png" class="planetsImg">
-        </div>
-        <div class="planets" id="PSR_B1620-26_B">
-            <img src="psr_B1620-26_B.png" class="planetsImg">
-        </div>
-        <div>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" id="resetButton">
-                ↻
-            </button>
-            <a href="main.html"><button type="button" class="btn btn-primary" data-bs-toggle="modal" id="resetButton">
-                🏠
-            </button></a>
-        </div>
+    <p class="quote">"We are all stars in this galaxy. All of us. No one's greater than the other." - Scatman Crothers</p>
+
+<div class="divs">
+    <a href="main.html" id="startLink"><div class="button" id="start">START</div></a>
+    <div style="display: flex; justify-content: center; gap:50px">    
+        <a href="instructions.html"><div class="button" id="instructions">Instructions</div></a>
+        <a href="creators.html"><div class="button" id ="creator">About Us</div></a>
     </div>
+</div>
     <div id="container">
-        <div class="side">
-            <div id="shirts">
-                <div class="earth shirts wardrobe">
-                    <div class="items shirts">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items shirts">
-                        <img class="itemImg" src="pDressICON.png" name="pDress">
-                    </div>
-                    <div class="items shirts">
-                        <img class="itemImg" src="wDressICON.png" name="wDress">
-                    </div>
-                </div>
-                <div class="mars shirts wardrobe">
-                    <div class="items shirts">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items shirts">
-                        <img class="itemImg" src="redCapeICON.png" name="redCape">
-                    </div>
-                </div>
-                <div class="saturn shirts wardrobe">
-                    <div class="items shirts">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                </div>
-                <div class="GJ_504b shirts wardrobe">
-                    <div class="items shirts">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items shirts">
-                        <img class="itemImg" src="barbDressICON.png" name="barbDress">
-                    </div>
-                    <div class="items shirts">
-                        <img class="itemImg" src="barbSHIRTICON.png" name="barbSHIRT">
-                    </div>
-                </div>
-                <div class="PSR_B1620-26_B shirts wardrobe">
-                    <div class="items shirts">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items shirts">
-                        <img class="itemImg" src="opCOATICON.png" name="opCOAT">
-                    </div>
-                </div>
-            </div>
-            <div id="pants">
-                <div class="earth pants wardrobe">
-                    <div class="items pants">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                </div>
-                <div class="mars pants wardrobe">
-                    <div class="items pants">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                </div>
-                <div class="saturn pants wardrobe">
-                    <div class="items pants">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items pants">
-                        <img class="itemImg" src="cowbPantsICON.png" name="cowbPants">
-                    </div>
-                </div>
-                <div class="GJ_504b pants wardrobe">
-                    <div class="items pants">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items pants">
-                        <img class="itemImg" src="barbPANTSICON.png" name="barbPANTS">
-                    </div>
-                </div>
-                <div class="PSR_B1620-26_B pants wardrobe">
-                    <div class="items pants">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items pants">
-                        <img class="itemImg" src="opPANTSICON.png" name="opPANTS">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="display">
-            <div id="player">
-                <div id="player_back_accessories" class="display">
-                    <div id="player_shoes_accessories" class="display">
-                        <div id="player_pants" class="display">
-                            <div id="player_shirts" class="display">
-                                <div id="player_hats" class="display">
-                                    <div id="player_neck_accessories" class="display">
-                                        <div id="player_waist_accessories" class="display">
-                                            <div id="player_outer_accessories" class="display"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="side">
-            <div id="hats">
-                <div class="earth hats wardrobe">
-                    <div class="items hats">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items hats">
-                        <img class="itemImg" src="yHatICON.png" name="yHat">
-                    </div>
-                    <div class="items hats">
-                        <img class="itemImg" src="headphonesICON.png" name="headphones">
-                    </div>
-                </div>
-                <div class="mars hats wardrobe">
-                    <div class="items hats">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items hats">
-                        <img class="itemImg" src="hornsICON.png" name="horns">
-                    </div>
-                </div>
-                <div class="saturn hats wardrobe">
-                    <div class="items hats">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items hats">
-                        <img class="itemImg" src="sunHatICON.png" name="sunHat">
-                    </div>
-                </div>
-                <div class="GJ_504b hats wardrobe">
-                    <div class="items hats">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                </div>
-                <div class="PSR_B1620-26_B hats wardrobe">
-                    <div class="items hats">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items hats">
-                        <img class="itemImg" src="opHatICON.png" name="opHat">
-                    </div>
-                </div>
-            </div>
-            <div id="accessories">
-                <div class="earth accessories wardrobe">
-                    <div class="items accessories">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items shoes_accessories">
-                        <img class="itemImg" src="bootsICON.png" name="boots">
-                    </div>
-                </div>
-                <div class="mars accessories wardrobe">
-                    <div class="items accessories">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items neck_accessories">
-                        <img class="itemImg" src="scarfICON.png" name="scarf">
-                    </div>
-                    <div class="items back_accessories">
-                        <img class="itemImg" src="tailIcon.png" name="tail">
-                    </div>
-                </div>
-                <div class="saturn accessories wardrobe">
-                    <div class="items accessories">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items waist_accessories">
-                        <img class="itemImg" src="beltICON.png" name="belt">
-                    </div>
-                    <div class="items shoes_accessories">
-                        <img class="itemImg" src="yelSockICON.png" name="yelSock">
-                    </div>
-                </div>
-                <div class="GJ_504b accessories wardrobe">
-                    <div class="items accessories">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                    <div class="items outer_accessories">
-                        <img class="itemImg" src="barbBoxICON.png" name="barbBox">
-                    </div>
-                </div>
-                <div class="PSR_B1620-26_B accessories wardrobe">
-                    <div class="items accessories">
-                        <img class="itemImg" src="nothingIcon.png" name="nothing">
-                    </div>
-                </div>
-            </div>
-        </div>
+        <img id="alien"src="alien.png" alt="alien">
+        <img id="ufo" src="ufo.png" alt="ufo">
     </div>
-    <script src="app.js"></script>
+</div>
 </body>
-
 </html>
